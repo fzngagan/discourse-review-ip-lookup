@@ -13,6 +13,7 @@ export default class ReviewQueueIpLookup extends IpLookup {
         this.set("ip", userInfo.ip_address);
       } catch(e) {
         popupAjaxError(e);
+        return; // no need to go further in this case
       }
     }
 
