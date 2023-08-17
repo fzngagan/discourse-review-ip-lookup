@@ -1,8 +1,6 @@
 {
-  "about_url": null,
-  "license_url": null,
-  "assets": {
-  },
   "name": "IP Lookup in Review Queue",
+  "about_url": null,
+  "license_url": "https://github.com/discourse/discourse-review-ip-lookup/blob/main/LICENSE",
   "component": true
 }
