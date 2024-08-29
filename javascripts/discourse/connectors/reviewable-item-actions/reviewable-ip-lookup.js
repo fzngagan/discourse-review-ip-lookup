@@ -6,6 +6,6 @@ export default class ReviewableIpLookup extends Component {
 
   get isNotReviewableUser() {
     const reviewable = this.args.outletArgs.reviewable;
-    return reviewable.type !== 'ReviewableUser';
+    return reviewable.type !== "ReviewableUser";
   }
 }
