@@ -1,3 +1,3 @@
-{{#if (and reviewable.target_created_by this.currentUser.staff)}}
-  <ReviewQueueIpLookup @ip="init" @userId={{reviewable.target_created_by.id}} />
+{{#if (and @outletArgs.reviewable.target_created_by this.currentUser.staff this.isNotReviewableUser)}}
+  <ReviewQueueIpLookup @ip="init" @userId={{@outletArgs.reviewable.target_created_by.id}} />
 {{/if}}
