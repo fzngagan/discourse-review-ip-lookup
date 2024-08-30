@@ -12,8 +12,17 @@ export default class ReviewableIpLookup extends Component {
   }
 
   <template>
-    {{#if (and @outletArgs.reviewable.target_created_by this.currentUser.staff this.isNotReviewableUser)}}
-      <ReviewQueueIpLookup @ip="init" @userId={{@outletArgs.reviewable.target_created_by.id}} />
+    {{#if
+      (and
+        @outletArgs.reviewable.target_created_by
+        this.currentUser.staff
+        this.isNotReviewableUser
+      )
+    }}
+      <ReviewQueueIpLookup
+        @ip="init"
+        @userId={{@outletArgs.reviewable.target_created_by.id}}
+      />
     {{/if}}
   </template>
 }
