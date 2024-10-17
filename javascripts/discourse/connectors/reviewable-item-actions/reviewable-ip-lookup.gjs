@@ -1,5 +1,5 @@
 import Component from "@glimmer/component";
-import { inject as service } from "@ember/service";
+import { service } from "@ember/service";
 import { and } from "truth-helpers";
 import ReviewQueueIpLookup from "../../components/review-queue-ip-lookup";
 
